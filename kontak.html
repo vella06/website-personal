@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        /* Gaya untuk memastikan navbar tetap di atas */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #333; /* Latar belakang hitam */
+            border-bottom: 2px solid #007bff; /* Border bawah */
+        }
+
+        .navbar .nav-link, .navbar-brand {
+            color: white !important; /* Teks navbar menjadi putih */
+        }
+
+        /* Warna latar belakang untuk seluruh halaman */
+        body {
+            background-image: url(img/bgimg.jpg);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 70px; /* Menghindari konten terhalang navbar */
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        header {
+            background-color: pink;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        a img {
+            border-radius: 50%;
+        }
+
+        footer {
+            text-align: center;
+            background-color: pink;
+            color: black;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">FELLA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portofolio.html">Portofolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Kontak Saya</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Hubungi Saya Jika Anda Tertarik</h2>
+            <p>Jika Anda memiliki pertanyaan mengenai saya, silakan hubungi saya di sini.</p>
+        </section>
+
+        <section>
+            <h3>Ikuti Saya di Instagram</h3>
+            <a href="https://www.instagram.com/ella_abjdefg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo - Follow @ella_abjdefg on Instagram" width="50" height="50">
+                <span>@ella_abjdefg</span>
+            </a>
+        </section>
+
+        <section>
+            <h3>Kunjungi Website Pertama saya</h3>
+            <p><a href="file:///D:/web%20fella/cantik.html" target="_blank">Klik di sini untuk mengunjungi website kami.</a></p>
+        </section>
+
+        <section>
+            <h3>Hubungi Saya via WhatsApp Jika Anda Memiliki Pertanyaan</h3>
+            <a href="https://wa.me/6285709922998" target="_blank">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.GLoOQRsVhv62XpfX3rRbXQHaHl&pid=Api&P=0&h=220" alt="WhatsApp Logo" width="50" height="50">
+                <span>Chat saya via WhatsApp jika ingin bertanya &#128522;</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 FELLA IGE ALFIZI. All rights reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        /* STYLE NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #333; /* Latar belakang hitam */
+            border-bottom: 2px solid #007bff; /* Border bawah */
+        }
+
+        .navbar .nav-link, .navbar-brand {
+            color: white !important; /* Teks navbar menjadi putih */
+        }
+
+        /* UNTUK MENGUBAH BODY */
+        body {
+            background-image: url(img/bgimg.jpg); 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Kontainer utama untuk konten */
+        .content-container {
+            margin-top: 80px; /* untuk memebrikan jarak agar konten tidak tertutup oleh navbar */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* style jumbotron  */
+        .jumbotron {
+            background-image: url(img/bunga.jpg); 
+            background-size: cover;
+            background-position: center center;
+            padding: 50px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 15px;
+        }
+
+        /* Gaya untuk memastikan teks di bagian About Me berada di tengah */
+        .full-width-border {
+            display: inline-block;
+            max-width: 800px; /* Menentukan lebar maksimum */
+            width: 100%; /* Agar div mengisi ruang secara proporsional */
+            text-align: center; /* Teks sejajar di tengah */
+            padding: 20px;
+            border: 2px solid #007bff; /* Border biru */
+            margin: 20px auto; /* Memastikan elemen di tengah */
+            border-radius: 10px;
+            background-color: white; /* Latar belakang putih di dalam border */
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+            border: 3px solid #007bff; /* Border biru di sekitar gambar */
+            border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+            width: 250px; /* Ukuran gambar */
+            height: 250px; /* Ukuran gambar */
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">FELLA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portofolio.html">Portofolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Selamat Datang!</h1>
+        <p class="lead">ini adalah web profile Sederhana milik saya semoga anda menemukan sesuatu yang menarik.</p>
+        <hr class="my-4">
+        <p>Selamat menjelajah!</p>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content-container">
+        <!-- Bagian Informasi -->
+        <div class="outer-wrapper">
+            <img src="img/fella.jpg" alt="Avatar">
+            <h1 class="text-3xl font-bold text-blue-600">FELLA IGE ALFIZI</h1>
+            <p class="text-xl text-gray-600">University student</p>
+        </div>
+
+        <!-- Border untuk tulisan yang memenuhi layar -->
+        <div class="full-width-border">
+            <h2 class="text-2xl font-bold text-gray-700">About <span class="text-blue-600">Me</span></h2>
+            <p>
+                Hallo!!! Perkenalkan nama saya FELLA IGE ALFIZI, mahasiswa Sistem informasi di kampus Dehasen, semester tiga.
+                Saya memiliki minat pada dunia teknologi tepatnya pada pemrograman web. Sebagai mahasiswa jurusan sistem informasi, saya
+                terus mengembangkan minat saya dalam desain dan pemrograman web. Saat ini saya telah menguasai bahasa HTML dan CSS. 
+                Dalam waktu luang, saya suka membaca buku dan mendengarkan musik.
+            </p>
+        </div>
+        
+        <!-- Contact Details -->
+        <div class="outer-wrapper">
+            <h2 class="text-2xl font-bold text-gray-700">Contact <span class="text-blue-600">Details</span></h2>
+            <ul>
+                <li><strong>Age:</strong> 19</li>
+                <li><strong>Country:</strong> Indonesia</li>
+                <li><strong>Address:</strong> Sawa Lebar, Bengkulu</li>
+                <li><strong>Email:</strong> vellacrp@gmail.com</li>
+                <li><strong>Phone:</strong> 085709922998</li>
+                <li><strong>Position:</strong> student</li>
+            </ul>
+        </div>
+    </div>
+
+      <!-- FOOTER -->
+
+      <div class="footer">
+        <p>&copy; 2024 FELLA IGE ALFIZI. All rights reserved. | <a href="https://youtu.be/M4gzQzzKRlI?si=7mEcNpRvGFw8AW9F">Dengarkan</a> | <a href="https://youtu.be/uDh1s-Ly7e0?si=C6mgCXyT3G0QzGY4">film out</a></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

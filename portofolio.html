@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #333;
+            border-bottom: 2px solid #007bff;
+        }
+
+        .navbar .nav-link, .navbar-brand {
+            color: white !important;
+        }
+
+        body {
+            background-image: url(img/bgimg.jpg);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content-container {
+            margin-top: 80px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .jumbotron {
+            background-image: url(img/bunga.jpg);
+            background-size: cover;
+            background-position: center center;
+            padding: 50px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 15px;
+        }
+
+        .full-width-border {
+            display: inline-block;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #007bff;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+            border: 3px solid #007bff; /* Border biru di sekitar gambar */
+            border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+            width: 250px; /* Ukuran gambar */
+            height: 250px; /* Ukuran gambar */
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0; /* Menghapus border lingkaran */
+        }
+
+        .portfolio-item .content {
+            padding: 15px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .education {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .education h2 {
+            font-size: 2rem;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .education ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education ul li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">FELLA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portofolio.html">Portofolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+      <!-- JUMBOTRON -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Portofolio</h1>
+        <p class="lead">ini adalah halam portofolio saya semoga anda menemukan hal yang menarik.</p>
+        <hr class="my-4">
+        <p>Selamat menjelajah!</p>
+    </div>
+          <!-- BAGIAN FOTO PERTAMA -->
+    <div class="content-container">
+        <div class="outer-wrapper">
+            <img src="img/sayya.jpg" alt="Avatar">
+            <h1 class="text-3xl font-bold text-blue-600">FELLA IGE ALFIZI</h1>
+            <p class="text-xl text-gray-600">University student</p>
+        </div>
+
+        <div class="full-width-border">
+            <h2 class="text-2xl font-bold text-gray-700">About <span class="text-blue-600">Me</span></h2>
+            <p>
+                Hallo!!! Perkenalkan nama saya FELLA IGE ALFIZI, mahasiswa Sistem informasi di kampus Dehasen, semester tiga.
+                Saya memiliki minat pada dunia teknologi tepatnya pada pemrograman web. Sebagai mahasiswa jurusan sistem informasi, saya
+                terus mengembangkan minat saya dalam desain dan pemrograman web. Saat ini saya telah menguasai bahasa HTML dan CSS. 
+                Dalam waktu luang, saya suka membaca buku dan mendengarkan musik.
+            </p>
+        </div>
+
+        <!-- Portfolio  -->
+
+        <h2 class="text-2xl font-bold text-gray-700">My <span class="text-blue-600">Portfolio</span></h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="img/ecommers.jpg" alt="Project 1">
+                <div class="content">
+                    <h3>Project e-commerce</h3>
+                    <p>proyek ini adalah proyek e-commerce sederhana saya yang dibuat mengunakan PHP & MySQL, proyek ini saya kerjakan 
+                    guna memenuhi tugas mata kuliah ecommerce pada semester dua.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/peta.jpg" alt="Project 2">
+                <div class="content">
+                    <h3>Project 2</h3>
+                    <p>Proyek kedua saya adalah proyek pembuatan peta sederhana mengunakan aplikasi ArcView,dalam proyek ini kami belajar cara nya
+                    membuat peta sederhana, proyek ini saya kerjakan untuk memenuhi tugas akhir mata kulia Geografi pada semester dua.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/website.jpg" alt="Project 3">
+                <div class="content">
+                    <h3>Project 3</h3>
+                    <p>Proyek ini berfokus pada pembuatan website mengunakan HTML & CSS pada mata kuliah pemerograman web di semester tiga.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIWAYAT PENDIDIKAN -->
+
+        <div class="education">
+            <h2>Riwayat Pendidikan</h2>
+            <ul>
+                <li><strong>SD:</strong> SD Negeri 52 Rejang Lebong</li>
+                <li><strong>SMP:</strong> SMP Negeri 14 Rejang Lebong</li>
+                <li><strong>SMA:</strong> SMA Negeri 3 Rejang Lebong</li>
+                <li><strong>University:</strong> Universitas Dehasen Bengkulu, Sistem Informasi</li>
+            </ul>
+        </div>
+
+        <!-- Additional Personal -->
+
+        <div class="full-width-border">
+            <h2 class="text-2xl font-bold text-gray-700">Additional <span class="text-blue-600">Details</span></h2>
+            <p>
+                Saya adalah individu yang berdedikasi, selalu ingin belajar hal baru dan bersemangat terhadap dunia teknologi, terutama dalam 
+                pengembangan web. Keterampilan utama saya saat ini meliputi HTML, CSS, dan dasar-dasar PHP. Selain itu, saya juga memiliki 
+                minat yang mendalam pada desain grafis dan pemetaan geografis. Harapan saya adalah terus berkembang dan menjadi profesional 
+                yang handal di bidang teknologi.
+            </p>
+        </div>
+    </div>
+
+          <!-- FOOTER -->
+
+    <div class="footer">
+        <p>&copy; 2024 FELLA IGE ALFIZI. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
